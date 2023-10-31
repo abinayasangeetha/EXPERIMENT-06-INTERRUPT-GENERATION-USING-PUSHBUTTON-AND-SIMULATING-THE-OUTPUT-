@@ -32,7 +32,7 @@ Interrupt Lines (EXTI0-EXTI15)
 The STM32 ARM microcontroller features 23 event sources which are divided into two sections. The first section corresponds t external pins on each port which are P0-P15. The second section corresponds to RTC, ethernet, USB interrupts. Therefore, in the first section, we have 16 lines corresponding to line0 till line15. All of these map to a pin number.
 The diagram below shows how the GPIO pins are connected to the 16 interrupt lines:
 
-![image](https://github.com/vasanthkumarch/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/36288975/3e1ededb-144c-4103-a64e-9132b7e06e1b)
+<img src=https://github.com/vasanthkumarch/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/36288975/3e1ededb-144c-4103-a64e-9132b7e06e1b width=450 height=450>
 
 One important thing to note here is that same number pins are connected to line with the same number. All of these then join to form a single line. Additionally, we can not use two pins one one line at the same time. For example out of PA1, PB1, PC1, PD1, PE1, PF1 and PG1 you can only use a single pin out of all these. This is because they are all connected to the same line EXTI1. However you can use PA1 and PA2 at the same time as they are connected with different lines.
 
@@ -210,14 +210,14 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## Output screen shots of proteus  :
 
 #### LED ON
-  ![image](https://github.com/abinayasangeetha/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119393675/59b64b15-0b69-4395-b371-07dfe029d728)
+  <img src=https://github.com/abinayasangeetha/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119393675/59b64b15-0b69-4395-b371-07dfe029d728 width=450 height=450>
 
 #### LED OFF
-![image](https://github.com/abinayasangeetha/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119393675/854db541-755e-4d5f-b453-947ac1916c1a)
+<img src=https://github.com/abinayasangeetha/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119393675/854db541-755e-4d5f-b453-947ac1916c1a width=450 height=450>
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![image](https://github.com/abinayasangeetha/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119393675/f335de84-1dae-4782-9c7f-a29979821e9f)
+ <img src=https://github.com/abinayasangeetha/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119393675/f335de84-1dae-4782-9c7f-a29979821e9f width=450 height=450>
 
  
 ## Result :
