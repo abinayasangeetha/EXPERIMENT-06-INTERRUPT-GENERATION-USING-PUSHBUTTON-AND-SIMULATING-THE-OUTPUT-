@@ -18,10 +18,13 @@ ARM v7 Core supports multiple great features for handling exceptions and interru
 Micro-Coded Architecture So that interrupt stacking, entry, and exit are done automatically in hardware. Which offloads this work overhead from the CPU
 ### Processor Mode
 
+
 The processor mode can change when exceptions occur. And it can be in one of the following modes:
 Thread Mode: Which is entered on reset.
 Handler Mode: Which is entered on all other exceptions.
-![image](https://github.com/vasanthkumarch/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/36288975/4f52f2d6-4cdb-4315-b2b2-b55dc1639c43)
+
+<img src=https://github.com/vasanthkumarch/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/36288975/4f52f2d6-4cdb-4315-b2b2-b55dc1639c43 width=450 height=450>
+
 The STM32 ARM microcontroller interrupts are generated in the following manner:
 
 The system runs the ISR and then goes back to the main program. The NVIC and EXTI are configured. The Interrupt Service Routine (ISR) also known as the interrupt service routine handler is defined to enable the external interrupts.
@@ -38,23 +41,32 @@ One important thing to note here is that same number pins are connected to line 
 
 Now each of these lines EXTI0-EXTI15 can be used to trigger an interrupt on different modes of the signal : rising edge, falling edge or rising_falling edge.
 ## Procedure:
-Selecting GPIO Ports
+1.Open a new STM32 Project.
 
-PA5 -> GPIO Output
+2.Selecting GPIO Ports
 
-Configure the PC13 Port at Pull up Mode followed by generating the code.
+3.PA9 -> GPIO EXTI9
+4.PA11 -> GPIO Output
 
-Write the function(Declare,Define,Call)
+5.Configure the PA9 Port at Pull up Mode followed by Click NVIC function and select enable.
 
-Build Debug and Create 'hex file'
+6.Select RCC function followed by click High speed clock -> Crystal/ceramic Resonator.
 
-Open a new Proteus Project.
+7.Select Clock configuration followed by Select -> input frequency -> HSE -> Enable css
 
-Select ports STM32F401RB, LED and Push Button.
+8.Remove error using Resolve clock issue and generate the code.
 
-Connect PA5 to LED and PC13 to Push Button.
+9.define the callback function.
 
-Check for execution of the output using Push Button option.
+10.Build Debug and Create 'hex.file'
+
+11.Open a new Proteus Project.
+
+12.Select ports STM32F401RB, LED and Push Button.
+
+13.Connect PA9 to Push Button and PA11 to LED.
+
+14.Check for execution of the output using Push Button option.
 
   
 
